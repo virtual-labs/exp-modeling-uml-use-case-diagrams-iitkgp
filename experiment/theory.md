@@ -186,7 +186,7 @@ Assumptions|
 Actors|Member 
 Steps|1. User types in user ID  2. User types in password, 3. User clicks on the 'Login' button, 4. IF successful THEN show home page, ELSE display error| 
 Variations|
-Non-functiona|
+Non-functional|
 Issues|
 
 The above use case lets an already registered member of the LIS to login to the system and possible use it's various features. If the user provides a correct pair of (<user_id>, <password>) then he can access his home page. However, if login credentials are incorrect, an error message is displayed to him. Figure 1 shows its pictorial representation.
