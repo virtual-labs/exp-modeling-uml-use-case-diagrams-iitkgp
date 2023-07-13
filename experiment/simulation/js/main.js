@@ -577,6 +577,7 @@ function removerowuc(btndel) {
     var index = actorex1.indexOf(listItemValue);
     if (index !== -1) {
       actorex1.splice(index, 1);
+      
     }
     console.log(actorex1);
 
@@ -627,9 +628,19 @@ var arrucase = [];
 var lblarr = [];
 var myTab;
 
-
+var lenact, lenuc;
 
 function drawbtnex1() {
+  
+  
+
+/* if((lenact == 2) && (lenuc == 3)){
+  document.getElementById("dispuml1").style.display = "block";
+}
+else{
+  alert("Insert Usecase or Actor in the table");
+  document.getElementById("dispuml1").style.display = "none";
+} */
 
   document.getElementById("dispuml1").style.display = "block";
   myTab = document.getElementById('tbl5');
@@ -723,6 +734,7 @@ console.log(removeDuplicates(arract));*/
     arruc.forEach(element => {
       if (!arrucase.includes(element)) {
         arrucase.push(element);
+        //lenuc=arrucase.length;
       }
     });
     return arrucase;
@@ -750,9 +762,9 @@ console.log(removeDuplicates(arract));*/
   console.log(arrucase);
   console.log(lblarr);
 
-
-
-
+  lenuc=arrucase.length;
+  lenact=actorex1.length;
+  
 
   var namespace = joint.shapes;
 

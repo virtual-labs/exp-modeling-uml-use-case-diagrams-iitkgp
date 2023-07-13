@@ -211,13 +211,13 @@ The details of the "Issue book" use case is shown in table 6.
 Table 6: UC5 -- Issue book
 Use Case|UC5. Issue book
 :--|:--|
-Description|Allows a member to issue a specified book against his account
-Assumptions| 1. User is logged in. 2. The book is available 3. User's account has not exceeded the limit of maximum books that can be issued
-Actors|Member (primary), Library staff
-Steps| 1. User logs in, 2. User searches for a book, 3. User clicks on "Issue" button to issue the book, 4. User's account is updated, 5.Library staff delivers the book
-Variations|
-Non-functiona|
-Issues|
+Description|Allows a member to issue a specified book against his account |
+Assumptions| 1. User is logged in. 2. The book is available 3. User's account has not exceeded the limit of maximum books that can be issued |
+Actors|Member (primary), Library staff |
+Steps| 1. User logs in, 2. User searches for a book, 3. User clicks on "Issue" button to issue the book, 4. User's account is updated, 5.Library staff delivers the book |
+Variations| |
+Non-functiona| |
+Issues| |
 
 
 In order to issue a book, the availability of the book has to be checked. Also, the system needs to verify whether another book could be issued to the current user. These are shown in figure 2 by the «include» relationship among the use cases. The maximum # of books that can be issued to a user depends on whether he is a student or a professor. So, "Verify issue count" is a general use case, which has been specialized by "Verify student issue count" and "Verify professor issue count" use cases. These have been represented by the "generalization" relationship in figure 2.
