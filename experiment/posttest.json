@@ -2,35 +2,36 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Generalization relationship exists between two use cases when",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A use case derives from a base use case",
+        "b": "A use case derives from a base use case and specializes some of its inherited functionality ",
+        "c": "A use case includes functionality of another use case",
+        "d": "No two use cases can be related "
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": " A college has an online Library Management System. Who's the primary actor here?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Librarian ",
+        "b": "Director of the college ",
+        "c": " Teacher ",
+        "d": "Student"
+       
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Use cases can be used for testing, which includes",
+      "answers": {
+        "a": "Validation ",
+        "b": "Verification ",
+        "c": "Both",
+        "d": " None"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
