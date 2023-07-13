@@ -1,13 +1,137 @@
+<!--Redeveloped
+Lab: Software Engineering
+Exp:Modeling UML Use Case Diagrams and Capturing Use Case Scenarios
+File Name: index.html
+Author: Prakriti Dhang -->
+
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
 </head>
 <body>
-		<!-- Your code goes here-->
+   <!--  <header id="header">
+        <div class="container p-3">
+          <div class="card">
+          <div class="row">
+            <div class="col-md-2">
+            <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+          </div>
+          <div class="col-md-8 p-4">
+            <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+          </div>
+          <div class="col-md-2">
+            <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+          </div>
+          </div>
+        </div>
+        </div>
+      </header>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+      <div class="container p-2">
+        <hr>
+        <p class="h3 fw-bold fst-italic text-center" style="color: #000283;"> Modeling UML Use Case Diagrams and Capturing Use Case Scenarios</p>
+        <hr>
+    </div> -->
+
+    <div class="container mt-2 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3 ">  
+            <div class="row">
+                <div class="col-md-6">
+                   <p class="fs-5 fw-bold" style="color: brown; text-align: justify;">From the following problem statement, identify the actors and use cases</p>
+                   <p style="text-align: justify;"> An automated teller machine (ATM) lets customers to withdraw cash anytime from anywhere without requiring involvement of any banking clerk or representative. Customer must insert his ATM card into he machine and authenticate himself by typing in his personal identification number (PIN). He cannot avail any of the facilities if the PIN entered is wrong. Authenticated customers can also change their PIN. They can deposit cash to their account with the bank. Also they can transfer funds to any other account. The ATM also provides options to the user to pay electricity or phone bill. Everyday morning the stock of cash in the ATM machine is replenished by a representative from the bank. 
+                   Also, if the machine stops working, then it is fixed by a maintenance guy.
+
+
+                   </p>
+               
+                </div>
+               
+                <div class="col-md-6">
+                
+                  <div class="p-2 border-start" >
+                    <div class="card-body">
+                    <!--div class="main"-->
+                    <div  class="card card-body border border-1 border-info" id="p1">
+                        <p style="text-align: justify;" class="p-2" id="para1 " class="fs-5">
+                          <mark id="m1">An automated teller machine (ATM) lets <mark id="m11">customers</mark> to <mark id="mu1">withdraw</mark> cash anytime from anywhere without 
+                          requiring involvement of any banking clerk or representative.</mark> <mark id="m2">Customer must insert his ATM card 
+                          into he machine and <mark id="mu2">authenticate</mark> himself by typing in his personal identification number (PIN).
+                           He cannot avail any of the facilities if the PIN entered is wrong. Authenticated customers can
+                            also <mark id="mu3">change their PIN</mark>. They can <mark id="mu4">deposit cash</mark> to their account with the bank. Also they can 
+                            transfer funds to any other account. The ATM also provides options to the user to <mark id="mu5">pay</mark> electricity 
+                            or phone bill. Everyday morning the stock of cash in the ATM machine is <mark id="mu6">replenished</mark> by a 
+                            <mark id="m22">representative</mark> from the bank.</mark> <mark id="m3">Also, if the machine stops working, then it is <mark id="mu7">fixed</mark> by a 
+                            <mark id="m33">maintenance guy.</mark></mark>
+                        </p>
+                      </div>     
+
+ <div class="card card-body p-2" id="pm1"  style="display:none; border:1px solid rgb(1, 68, 250);border-radius: 8px; background: linear-gradient(to bottom, #c0f2ff 0%, #beffe9 100%);">
+    <p id="da11" class="fs-5 fst-italic" style="display:none; text-align: justify;">Actor: <b>Customer</b><br> Customer uses the ATM to fulfill his 
+    goals like to withdraw, deposit money.</p>
+    <p id="du11" class="fs-5 fst-italic" style="display:none; text-align: justify;"> Use Case: <b>Withdraw Cash</b><br> Withdraw cash from the ATM.</p>
+ </div>
+
+ <div class="card card-body p-2" id="pm2"  style="display:none; border:1px solid rgb(1, 68, 250);border-radius: 8px; background: linear-gradient(to bottom, #c0f2ff 0%, #beffe9 100%);">
+  <p id="da21" class="fs-5 fst-italic" style="display:none; text-align: justify;">Actor: <b>Bank Representative</b> <br> Replenishes stock of cash in the ATM.</p>
+  <p id="du21" class="fs-5 fst-italic" style="display:none; text-align: justify;">Use Case: <b>Authenticate</b><br> Authenticate user by checking his ATM card and PIN.</p>
+  <p id="du22" class="fs-5 fst-italic" style="display:none; text-align: justify;">Use Case: <b>Change PIN</b> <br> Authenticated users can change their PIN.</p>
+  <p id="du23" class="fs-5 fst-italic" style="display:none; text-align: justify;">Use Case: <b>Deposit Cash</b><br> Authenticated users can deposit cash.</p>
+  <p id="du24" class="fs-5 fst-italic" style="display:none; text-align: justify;">Use Case: <b>Pay Bill</b><br> Authenticated users can pay bills.</p>
+  <p id="du25" class="fs-5 fst-italic" style="display:none; text-align: justify;">Use Case: <b>Replenish cash</b><br> Replenish stock of cash in the ATM.</p>
+</div>
+<div class="card card-body p-2" id="pm3"  style="display:none; border:1px solid rgb(1, 68, 250);border-radius: 8px; background: linear-gradient(to bottom, #c0f2ff 0%, #beffe9 100%);">
+  
+  <p id="da31" class="fs-5 fst-italic" style="display:none; text-align: justify;"> Actor: <b>Maintenance Person</b> <br> Fixes the ATM if there is any fault.</p>
+  <p id="du31" class="fs-5 fst-italic" style="display:none; text-align: justify;"> Use Case: <b>Fix ATM</b> <br> Repair the ATM if it's not working.</p>
+
+</div>
+
+
+<!--/div-->
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center border border-1 border-info p-2 rounded-1" style="background: linear-gradient(to bottom right, #ccffff 0%, #ffffff 99%);">
+                    
+                    <!--button type="button" id="gostrt" class="btn btn-info fs-5" onclick="gostart()" disabled>
+                      <i class="fas fa-step-backward "></i></button-->
+                    <button id="playbtn" type="button" class="btn btn-info fs-5" onclick="playsimulation()"> Click to Play <i class="fas fa-play  "></i></button>
+                    <button id="replaybtn" type="button" class="btn btn-info fs-5" onclick="replaysimulation()" style="display: none;"> Replay <i class="fas fa-redo"></i></button>
+                    <button id="pausebtn" type="button" class="btn btn-warning fs-5" onclick="pausesimulation()" style="display: none;"> Pause <i class="fas fa-pause "></i></button>
+                    <!--button type="button" id="goend" class="btn btn-info fs-5" onclick="goend()" disabled><i class="fas fa-step-forward " ></i></button-->
+               
+                  </div>
+                </div>
+              </div>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: justify;">For a given problem at first we identify the actors. This can be by following the steps as mentioned in the theory section. Once actors have been identified, we they make use of the system and thus, identify the use cases.</p>
+            <a class="btn btn-success fs-4" target="_self" href="./usecase_index.html" role="button">Click Here to Go to Exercise Page</a>
+            <hr>    
+        </div>
+            </div>
+
+
+           <!--  <div class="container p-1 ">
+              <hr>
+            <footer class="text-white text-center" >
+              
+                <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+             
+            </footer>
+            <hr>
+            </div> -->
+
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/simulation.js"></script>
 </body>
 </html>
