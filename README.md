@@ -4,7 +4,7 @@
 <img src="experiment/images/iitkgp.png" width="10%">
 </div>
 
-<b>Discipline | <b> Computer Science  
+<b>Discipline | <b> Computer Science  Engineering
 :--|:--|
 <b> Lab | <b> **Software Engineering**
 <b> Experiment|     <b> **Modeling UML Use Case Diagrams and Capturing Use Case Scenarios and Experiment No. 3**

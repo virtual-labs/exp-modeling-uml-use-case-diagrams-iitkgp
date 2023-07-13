@@ -217,7 +217,7 @@ Assumptions| 1. User is logged in. 2. The book is available 3. User's account ha
 Actors|Member (primary), Library staff 
 Steps| 1. User logs in, 2. User searches for a book, 3. User clicks on "Issue" button to issue the book, 4. User's account is updated, 5.Library staff delivers the book |
 Variations| 
-Non-functiona| 
+Non-functional| 
 Issues| 
 
 
