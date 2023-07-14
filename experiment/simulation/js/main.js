@@ -642,7 +642,7 @@ else{
   document.getElementById("dispuml1").style.display = "none";
 } */
 
-  document.getElementById("dispuml1").style.display = "block";
+  //document.getElementById("dispuml1").style.display = "block";
   myTab = document.getElementById('tbl5');
   let indexc1 = document.getElementById('froma').cellIndex;
   let indexc2 = document.getElementById('reltyp').cellIndex;
@@ -765,7 +765,18 @@ console.log(removeDuplicates(arract));*/
   lenuc=arrucase.length;
   lenact=actorex1.length;
   
+ if((lenact == 2) && (lenuc == 3)){
+  document.getElementById("dispuml1").style.display = "block";
+}
+else if((lenact != 2)){
+  alert("Insert Actor in the table");
+  document.getElementById("dispuml1").style.display = "none";
+} 
 
+else if((lenuc != 3)){
+  alert("Insert Usecases in the table in table 5");
+  document.getElementById("dispuml1").style.display = "none";
+}
   var namespace = joint.shapes;
 
   var graph = new joint.dia.Graph({}, { cellNamespace: namespace });

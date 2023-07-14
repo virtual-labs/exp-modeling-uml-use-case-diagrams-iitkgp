@@ -924,10 +924,10 @@ var arrreltyp2 = [];
 var actor2ex2 = [];
 var arrucase2 = [];
 var lblarr2 = [];
-var myTab2;
+var myTab2,lenuc2,lenact2;
 function drawbtnex2() {
 
-    document.getElementById("dispuml2").style.display = "block";
+   // document.getElementById("dispuml2").style.display = "block";
     myTab2 = document.getElementById('tbl25');
     let indexc1 = document.getElementById('froma2').cellIndex;
     let indexc2 = document.getElementById('reltyp2').cellIndex;
@@ -1038,7 +1038,21 @@ function drawbtnex2() {
     console.log(lblarr2);
 
 
-
+    lenuc2=arrucase2.length;
+    lenact2=actor2ex2.length;
+    
+   if((lenact2 == 9) && (lenuc2== 3)){
+    document.getElementById("dispuml2").style.display = "block";
+  }
+  else if((lenact2 != 9)){
+    alert("Insert Actor in the table");
+    document.getElementById("dispuml2").style.display = "none";
+  } 
+  
+  else if((lenuc2 != 3)){
+    alert("Insert Usecases in the table in table 5");
+    document.getElementById("dispuml2").style.display = "none";
+  }
 
 
 
