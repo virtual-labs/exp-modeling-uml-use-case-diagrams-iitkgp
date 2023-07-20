@@ -1041,16 +1041,16 @@ function drawbtnex2() {
     lenuc2=arrucase2.length;
     lenact2=actor2ex2.length;
     
-   if((lenact2 == 9) && (lenuc2== 3)){
+   if((lenact2 >= 9) && (lenuc2>= 3)){
     document.getElementById("dispuml2").style.display = "block";
   }
-  else if((lenact2 != 9)){
-    alert("Insert Actor in the table");
+  else if((lenact2 != 9) || (lenact2 < 9)){
+    alert("Insert Actor in the table. \n\n Hitn: From the given problem statement, there are two actors");
     document.getElementById("dispuml2").style.display = "none";
   } 
   
-  else if((lenuc2 != 3)){
-    alert("Insert Usecases in the table in table 5");
+  else if((lenuc2 != 3) || (lenuc2 <3)){
+    alert("Insert Usecases in the table in table 5. \n\n Hint: From the given problem statement, there are 10 usecases");
     document.getElementById("dispuml2").style.display = "none";
   }
 
