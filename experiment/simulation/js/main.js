@@ -768,13 +768,13 @@ console.log(removeDuplicates(arract));*/
  if((lenact == 2) && (lenuc == 3)){
   document.getElementById("dispuml1").style.display = "block";
 }
-else if((lenact != 2)){
-  alert("Insert Actor in the table");
+else if((lenact != 2) ||(lenact < 2)||(lenact > 2) ){
+  alert("Insert Actor in the table. \n\n Hint: From the given problem statement, there are two Actors");
   document.getElementById("dispuml1").style.display = "none";
 } 
 
-else if((lenuc != 3)){
-  alert("Insert Usecases in the table in table 5");
+else if((lenuc != 3)||(lenuc <3) || (lenuc >3)){
+  alert("Insert Usecases in the table in table 5. \n\n Hint: From the given problem statement, there are three usecases");
   document.getElementById("dispuml1").style.display = "none";
 }
   var namespace = joint.shapes;
