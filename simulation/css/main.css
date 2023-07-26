@@ -1,0 +1,314 @@
+/*Redeveloped
+Lab: Software Engineering
+Exp:Modeling UML Use Case Diagrams and Capturing Use Case Scenarios
+File Name: main.css
+Author: Prakriti Dhang */
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+   
+  }
+
+
+
+.table-hover  tr:hover th, .table-hover  tr:hover td {
+    background-color: #c8e4fffa;
+    
+}
+
+
+.table thead{
+    background-color: #1536a1fa;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+}
+
+
+
+.column-bordered-table td {
+  
+  border-right: 1px solid #1addff;
+}
+
+
+
+div.divscroll {
+   
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+.card{
+    margin-bottom: 10px;
+    
+    
+}
+.card-body{
+   background-color: transparent;
+}
+
+
+/*footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    padding-left: 1%;
+  
+   
+  }*/
+
+  #m1{
+    
+    color: black;
+    animation-name:highlight;
+    animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, yellow 49%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+
+
+
+  #m2{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+     
+          animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, yellow 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+
+
+  #m3{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+animation-play-state: paused;
+background-color: none;
+background: linear-gradient(90deg, yellow 50%, rgba(255, 255, 255, 0) 50%);
+background-size: 200% 100%;
+background-position: 100% 0;
+}
+
+
+
+  #m11{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  
+}
+
+
+
+
+  #m22{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+
+  #m33{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+
+
+  #mu1{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, orange 49%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  }
+
+  
+
+  #mu2{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+
+
+#mu3{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+background-color: none;
+background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+background-size: 200% 100%;
+background-position: 100% 0;
+}
+
+
+#mu4{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+background-color: none;
+background: linear-gradient(90deg, orange 48%, rgba(255, 255, 255, 0) 50%);
+background-size: 200% 100%;
+background-position: 100% 0;
+}
+
+
+
+#mu5{
+  color: black;
+  animation-name:highlight;
+  animation-duration: 1.5s;
+animation-timing-function: linear;
+animation-delay: 1s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-play-state: paused;
+background-color: none;
+background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+background-size: 200% 100%;
+background-position: 100% 0;
+}
+
+
+#mu6{
+  color: black;
+  animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+background-color: none;
+background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+background-size: 200% 100%;
+background-position: 100% 0;
+}
+
+
+
+#mu7{
+    color: black;
+    animation-name:highlight;
+    animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  background-color: none;
+  background: linear-gradient(90deg, orange 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  }
+
+  @-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+    }
+
+    /*  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+          animation: 1.5s highlight 1.5s 1 normal forwards;*/
