@@ -371,159 +371,8 @@ else{
 
 
 
-  /*if(((dobj1 == "user")|| (dobj1 == "User")|| (dobj1 == "student") ||((dobj1 == "member"))) && (dobjrel == "Association") && ((dobj2 == "return")) ){
-    var tr = document.createElement('tr');
-    tr.setAttribute("id","t5uc1");
-    document.getElementById('tbodytbl5').appendChild(tr);
-    var td1 = document.createElement('td');
-    var td2=document.createElement("td");
-    var td3=document.createElement("td");
-    var td4=document.createElement("td");
-    var td5=document.createElement("td");
-    var tdval1=document.createTextNode(dobj1);
-    var tdval2=document.createTextNode(dobjrel);
-    var tdval3=document.createTextNode(dobj2);
-    var tdval4=document.createTextNode(inpt3);
-    //var tdval5=document.appendChild(newIconbtn);
-   // tbody.appendChild(tr);
-   
-    
-    
-    
-    td1.appendChild(tdval1);
-    td2.appendChild(tdval2);
-    td3.appendChild(tdval3);
-    td4.appendChild(tdval4);
-    td5.appendChild(rbtn);
-    
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tr.appendChild(td4);
-    tr.appendChild(td5);
-    document.getElementById('tbodytbl5').appendChild(tr);
-  
-  }*/
 
-  /*if(((dobj1 == "user")|| (dobj1 == "User")|| (dobj1 == "student") ||((dobj1 == "member"))) && (dobjrel !== "Association") && ((dobj2 == "issue")|| (dobj2 == "return")) ){
-    alert(dobjrel +" is not possible between" +dobj1 +"and" +dobj2 );
-  }*/
 
-  /*if(((dobj1 == "librarian")) && (dobjrel == "Association") && ((dobj2 == "issue")) ){
-    var tr = document.createElement('tr');
-    tr.setAttribute("id","t5uc2");
-    document.getElementById('tbodytbl5').appendChild(tr);
-    var td1 = document.createElement('td');
-    var td2=document.createElement("td");
-    var td3=document.createElement("td");
-    var td4=document.createElement("td");
-    var td5=document.createElement("td");
-  
-    var tdval1=document.createTextNode(dobj1);
-    var tdval2=document.createTextNode(dobjrel);
-    var tdval3=document.createTextNode(dobj2);
-    var tdval4=document.createTextNode(inpt3);
-   
-   // tbody.appendChild(tr);
-    
-    
-    
-    
-    td1.appendChild(tdval1);
-    td2.appendChild(tdval2);
-    td3.appendChild(tdval3);
-    td4.appendChild(tdval4);
-    td5.appendChild(rbtn);
-  
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tr.appendChild(td4);
-    tr.appendChild(td5);
-    
-    document.getElementById('tbodytbl5').appendChild(tr);
-  
-  }
-  
-  if(((dobj1 == "librarian")) && (dobjrel == "Association") && ((dobj2 == "return")) ){
-    var tr = document.createElement('tr');
-    tr.setAttribute("id","t5uc3");
-    document.getElementById('tbodytbl5').appendChild(tr);
-    var td1 = document.createElement('td');
-    var td2=document.createElement("td");
-    var td3=document.createElement("td");
-    var td4=document.createElement("td");
-    var td5=document.createElement("td");
-  
-    var tdval1=document.createTextNode(dobj1);
-    var tdval2=document.createTextNode(dobjrel);
-    var tdval3=document.createTextNode(dobj2);
-    var tdval4=document.createTextNode(inpt3);
-   
-   // tbody.appendChild(tr);
-    
-    
-    
-    
-    td1.appendChild(tdval1);
-    td2.appendChild(tdval2);
-    td3.appendChild(tdval3);
-    td4.appendChild(tdval4);
-    td5.appendChild(rbtn);
-  
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tr.appendChild(td4);
-    tr.appendChild(td5);
-    
-    document.getElementById('tbodytbl5').appendChild(tr);
-  
-  }
-  
-  if(((dobj1 == "librarian")) && (dobjrel !== "Association") && ((dobj2 == "issue")|| (dobj2 == "return")) ){
-    alert(dobjrel +" is not possible between" +dobj1 +"and" +dobj2 );
-  
-  }
-  
-  
-   if(((dobj1 == "issue")|| (dobj1 == "verify")) && (dobjrel == "Include") && ((dobj2 == "verify")|| (dobj2 == "issue")) ){
-    var tr = document.createElement('tr');
-    tr.setAttribute("id","t5uc4");
-    document.getElementById('tbodytbl5').appendChild(tr);
-    var td1 = document.createElement('td');
-    var td2=document.createElement("td");
-    var td3=document.createElement("td");
-    var td4=document.createElement("td");
-    var td5=document.createElement("td");
-    var tdval1=document.createTextNode(dobj1);
-    var tdval2=document.createTextNode(dobjrel);
-    var tdval3=document.createTextNode(dobj2);
-    var tdval4=document.createTextNode(inpt3);
-   // tbody.appendChild(tr);
-    
-    
-    
-    
-    td1.appendChild(tdval1);
-    td2.appendChild(tdval2);
-    td3.appendChild(tdval3);
-    td4.appendChild(tdval4);
-    td5.appendChild(rbtn);
-  
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tr.appendChild(td4);
-    tr.appendChild(td5);
-    document.getElementById('tbodytbl5').appendChild(tr);
-  
-  }
-  
-  if(((dobj1 == "issue")|| (dobj1 == "verify")) && (dobjrel !== "Include") && ((dobj2 == "verify") || (dobj2 == "issue")) ){
-    alert(dobjrel +" is not possible between two use cases");
-  }
-  */
 
 
 }
@@ -569,23 +418,40 @@ function removerowuc(btndel) {
 
 
     var listItemValue = $(btndel).closest("li").data("value");
-    //console.log(listItemValue);
+    console.log(listItemValue);
     $(btndel).closest("li").remove();
     $("#selectactuc1").find('option[value="' + listItemValue + '"]').remove();
     $("#selectactuc2").find('option[value="' + listItemValue + '"]').remove();
 
-    var index = actorex1.indexOf(listItemValue);
-    if (index !== -1) {
-      actorex1.splice(index, 1);
-      
-    }
-    console.log(actorex1);
+    
 
+  var index = actorex1.indexOf(listItemValue);
+  if (index !== -1) {
+    actorex1.splice(index, 1);
 
-
-  } else {
-    return false;
   }
+  console.log(actorex1);
+
+
+  var index1 = arruc.indexOf(listItemValue);
+    if (index1 !== -1) {
+      arruc.splice(index1, 1);
+
+    }
+    console.log(arruc);
+
+
+
+  
+
+
+} 
+
+
+
+else {
+  return false;
+}
 
 
 }
@@ -631,16 +497,16 @@ var myTab;
 var lenact, lenuc;
 
 function drawbtnex1() {
-  
-  
 
-/* if((lenact == 2) && (lenuc == 3)){
-  document.getElementById("dispuml1").style.display = "block";
-}
-else{
-  alert("Insert Usecase or Actor in the table");
-  document.getElementById("dispuml1").style.display = "none";
-} */
+
+
+  /* if((lenact == 2) && (lenuc == 3)){
+    document.getElementById("dispuml1").style.display = "block";
+  }
+  else{
+    alert("Insert Usecase or Actor in the table");
+    document.getElementById("dispuml1").style.display = "none";
+  } */
 
   //document.getElementById("dispuml1").style.display = "block";
   myTab = document.getElementById('tbl5');
@@ -762,21 +628,21 @@ console.log(removeDuplicates(arract));*/
   console.log(arrucase);
   console.log(lblarr);
 
-  lenuc=arrucase.length;
-  lenact=actorex1.length;
-  
- if((lenact == 2) && (lenuc == 3)){
-  document.getElementById("dispuml1").style.display = "block";
-}
-else if((lenact != 2) ||(lenact < 2)||(lenact > 2) ){
-  alert("Insert Actor in the table. \n\n Hint: From the given problem statement, there are two Actors");
-  document.getElementById("dispuml1").style.display = "none";
-} 
+  lenuc = arrucase.length;
+  lenact = actorex1.length;
 
-else if((lenuc != 3)||(lenuc <3) || (lenuc >3)){
-  alert("Insert Usecases in the table in table 5. \n\n Hint: From the given problem statement, there are three usecases");
-  document.getElementById("dispuml1").style.display = "none";
-}
+  if ((lenact >= 2) && (lenuc >= 3)) {
+    document.getElementById("dispuml1").style.display = "block";
+  }
+  else if ((lenact != 2) || (lenact < 2) || (lenact > 2)) {
+    alert("Insert Actor in the table. \n\n Hint: From the given problem statement, there are two Actors");
+    document.getElementById("dispuml1").style.display = "none";
+  }
+
+  else if ((lenuc != 3) || (lenuc < 3) || (lenuc > 3)) {
+    alert("Insert Usecases in the table in table 5. \n\n Hint: From the given problem statement, there are three usecases");
+    document.getElementById("dispuml1").style.display = "none";
+  }
   var namespace = joint.shapes;
 
   var graph = new joint.dia.Graph({}, { cellNamespace: namespace });
