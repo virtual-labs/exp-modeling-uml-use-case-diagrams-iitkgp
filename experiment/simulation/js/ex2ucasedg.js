@@ -147,7 +147,7 @@ function addbtnt22() {
             document.getElementById('usecased2').appendChild(newLi);
             document.getElementById("inp22").value = "";
 
-            //ucaseex2.push(inpt22);
+            ucaseex2.push(inpt22);
 
             /* Use Case=Select option from the dropdown  */
             let newOptionID;
@@ -910,6 +910,11 @@ function removerowuc2(btndel) {
         $("#selectactuc21").find('option[value="' + listItemValue2 + '"]').remove();
         $("#selectactuc22").find('option[value="' + listItemValue2 + '"]').remove();
 
+        var index = ucaseex2.indexOf(listItemValue);
+        if (index !== -1) {
+            ucaseex2.splice(index, 1);
+        }
+        console.log(ucaseex2);
 
 
     } else {
