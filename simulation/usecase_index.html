@@ -1,0 +1,537 @@
+<!-- Redeveloped
+Lab: Software Engineering
+Exp:Modeling UML Use Case Diagrams and Capturing Use Case Scenarios
+File Name: usecase_index.html
+Author: Prakriti Dhang
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.2/joint.css" />
+
+
+
+   
+</head>
+<body >
+  <!-- <header id="header">
+    <div class="container-fluid p-3 ">
+      <div class="card">
+      <div class="row">
+        <div class="col-md-2">
+        <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+      </div>
+      <div class="col-md-8 p-4">
+        <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+      </div>
+      <div class="col-md-2">
+        <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+      </div>
+      </div>
+    </div>
+    </div>
+  </header>-->
+ 
+  <!-- <div class="container-fluid p-2 ">
+<hr>
+    <p class="h3 fw-bold fst-italic text-center" style="color: #000283;">Exercises</p>
+ <hr>
+</div>  -->
+
+	<div class="container-fluid mt-2 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3 ">  
+				
+
+<div class="card border border-2 border-primary p-1">
+  <div class="card-body">
+	<label class="form-label fw-bold fs-5">Select a problem from the dropdown list shown below</label>
+   <select id="selectex" class="form-select float-center border border-2 border-primary" aria-label="Default select example" onchange="subex()">
+  <option value="0" selected>Exercise #</option>
+  <option value="1">Exercise 1</option>
+  <option value="2">Exercise 2</option>
+  
+</select>
+<br>
+<p class="fs-6 fw-bold" id="para1" style="display: none;">Click Submit to View Solution</p>
+<button type="button" class="btn btn-info border border-2 border-primary fw-bold" id="dispviewbtn" onclick="viewsolutionb()" disabled>Submit</button>
+
+  </div> <!-- card body ended for select exercise div-->
+</div> <!-- card ended for select exercise div-->
+
+
+  
+
+		
+			<!----------------------------------------Problem Statement Exercise 1-------------------------------------->
+
+				<div class="card border border-2 border-info p-2" id="exercise1" style="display:none;">
+  <div class="card-body">
+	<label for="prob1" class="form-label fs-5" style="color: brown; font-weight: bold;">Draw a use case diagram for the following problem</label>
+  
+   <p class="fs-6">Consider a library, where a member can perform two operations: issue book and return it. 
+    A book is issued to a member only after verifying his credentials. Draw a use case diagram for the problem.</p>
+
+    
+ 
+
+<h6 class="fw-bold">Learning Objectives:</h6>  
+ <ol>
+	<li>Identify the actors and use cases
+</li>
+<li>Associate and include the use cases with the actors by drawing a simple use case diagram
+</li>
+
+
+
+ </ol>
+<!--p><b>Limitations:</b> While extending a use case, extension points could not be defined through this interface.</p> 
+-->
+
+</div> <!-- card body ended for exercise 1 problem statment-->
+</div> <!-- card ended for exercise 1 problem statement-->
+
+
+
+<!----------------------------------------Problem Statement Exercise 1 complete-------------------------------------->
+
+
+	<!------------------------------------------Exercise 1 -------------------------------------------->
+
+<div class="card border border-2 border-success" id="ex1" style="display:none;">
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-10" >
+
+      <!--------------------------------------------------------------- Table 1---------------------------------------------------------------->
+      <label for="table1" class="form-label fs-6" style=" font-weight: bold;">Table #1: Add actors</label>
+      <form id="ftbl1"  class=" bg-white " action="">
+      <div class="table-responsive">
+    <table id="tbl1" class="table table-bordered  border border-1 border-info table-stripped">
+      <thead>
+        <th>Actors</th>
+        <th>Add</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="form-control border-primary " type="text" id="inp1" placeholder="Enter an Actor" ></td>
+          <td style="text-align: center;"><button id="t1addbtn" class="btn btn-primary" type="button" onclick="addbtnt1()"  ><i class="bi bi-plus-lg"></i> Add</button></td>
+        </tr>
+      </tbody>
+ 
+    </table>
+   </div> <!-- table 1 responsive div ended for exercise 1-->
+</form>
+<!------------------------------------------------------------Table 2-------------------------------------------------------------------------->
+  <label for="table2" class="form-label fs-6" style=" font-weight: bold;">Table #2: Add use cases</label>
+  <form id="ftbl2"  class=" bg-white " action="">
+    <div class="table-responsive">
+  <table id="tbl2" class="table column-bordered-table table-bordered border border-1 border-info ">
+    <thead>
+      <th>Use Case</th>
+      <th>Add</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input class="form-control border-primary " type="text" id="inp2" placeholder="Enter an Use Case"></td>
+        <td  style="text-align: center;"><button id="t2addbtn" class="btn btn-primary" type="button" onclick="addbtnt2()" ><i class="bi bi-plus-lg"></i> Add</button></td>
+      </tr>
+    </tbody>
+
+  </table>
+ </div> <!-- table 2 responsive div ended for exercise 1-->
+</form>
+  
+<!-------------------------------------------------------------- Table 3---------------------------------------------------------------------->
+
+<label for="table3" class="form-label fs-6" style=" font-weight: bold;">Table #3: Add relationship</label>
+  <form id="ftbl3"  class=" bg-white " action="">
+    <div class="table-responsive">
+  <table id="tbl3" class="table column-bordered-table table-bordered  border border-1 border-info ">
+    <thead>
+      <th>From Actor / Use Case</th>
+      <th>Relationship</th>
+      <th>To Actor / Use Case</th>
+      <th>Label (Optional)</th>
+      <th>Add</th> 
+    </thead>
+    <tbody>
+     <td>
+      <select id="selectactuc1" class="form-select float-center border border-2 border-primary" aria-label="Default select example" >
+      
+      </select>
+     </td>
+     <td>
+      <select id="selectrel" class="form-select float-center border border-2 border-primary" aria-label="Default select example" >
+        <option value="Association" selected>Association</option>
+        <option value="Generalization">Generalization</option>
+        <option value="Include">Include</option>
+        <option value="Extend">Extend</option>
+        
+      </select>
+     </td>
+     <td>
+      <select id="selectactuc2" class="form-select float-center border border-2 border-primary" aria-label="Default select example" >
+       
+        
+      </select>
+     </td>
+     <td><input class="form-control border-primary " type="text" id="labelt3i" ></td>
+     <td style="text-align: center;"><button id="t3addbtn" class="btn btn-primary" type="button" onclick="addbtnt3()" ><i class="bi bi-plus-lg"></i> Add</button></td>
+       
+    </tbody>
+
+  </table>
+ </div> <!--table 3 responsive div ended for exercise 1-->
+</form>
+
+<!----------------------------------------------------------------------- Table 4 ------------------------------------------------------------->
+
+<label for="table4" class="form-label fs-6" style=" font-weight: bold;">Table #4: List of actors and use casess</label>
+  <form id="ftbl4"  class=" bg-white" action="">
+    <div class="table-responsive">
+  <table id="tbl4" class="table table-bordered  border border-1 border-info ">
+    <thead>
+      <th>Actor</th>
+      <th>Use Case</th>
+      
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul id="actord">
+
+          </ul>
+
+        </td>
+        <td>
+        <ul id="usecased">
+            
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div> <!--table 4 responsive div ended for exercise 1-->
+</form>
+
+
+<!---------------------------------------------------------------------- Table 5--------------------------------------------------------------->
+<label for="table5" class="form-label fs-6" style=" font-weight: bold;">Table #5: List of relationships</label>
+<form id="ftbl5"  class=" bg-white " action="">
+<div class="table-responsive">
+<table id="tbl5" class="table table-bordered  border border-1 border-info table-stripped">
+  <thead>
+    <th id="froma">From Actor / Use Case</th>
+    <th id="reltyp">Relationship</th>
+    <th id="toa">To Actor / Use Case</th>
+    <th id="lbl">Label</th>
+    <th>Remove</th>
+   
+  </thead>
+  <tbody id="tbodytbl5">
+
+  </tbody>
+</table>
+</div> <!-- table 5 responsive div ended for exercise 1-->
+
+<button id="drawbtn" class="btn btn-primary" type="button" onclick="drawbtnex1()" ><i class="bi bi-pencil-fill"></i> Draw</button>
+</form>
+</div> <!-- column ends for exercise 1-->
+</div> <!-- row ends for exercise 1-->
+</div> <!-- card body ends for exercise 1-->
+</div> <!-- card ends for exercise 1-->
+
+
+<div id="dispuml1" class="card border border-2 border-primary" style="display:none;">
+  <div class="card-body">
+<div id="ucdiagram1" class="container" style="margin-bottom: 5px; width: auto;">
+  
+</div> <!-- UML diagram div ends for exerxise 1-->
+</div> <!-- card body ends ends for exercise 1-->
+</div> <!-- card ends for exercise 1-->
+
+
+<!----------------------------------------Problem Statement Exercise 2-------------------------------------->
+
+<div class="card border border-2 border-info p-2" id="exercise2" style="display:none;">
+  <div class="card-body">
+	<label for="prob2" class="form-label fs-5" style="color: brown; font-weight: bold;">Draw a use case diagram for the following problem</label>
+  
+   <p class="fs-6">Consider your neighbouring travel agent from whom you can purchase flight tickets. To book a ticket you need to provide details about your journey i.e. on which date and at what time you would like to travel. You also need to provide your address. The agency has recently been modernized. So you can pay either by cash or by card. You can also cancel a booked ticket later if you decide to change your plan. In that case you need to book a new ticket again. Your agent also allows you to book a hotel along with flight ticket. 
+    While canceling a flight ticket you can also cancel hotel booking. 
+    Appropriate refund as per policy is made in case of cancellation.</p>
+
+    
+ 
+
+<h6 class="fw-bold">Learning Objectives:</h6>  
+ <ol>
+	<li>Identify the use cases from a given non-trivial problem statement
+</li>
+<li>Identify the primary and secondary actors for a system
+</li>
+<li>Use to generalization of use cases and «extend» relationship to prevent redundancy in the coding phase</li>
+
+
+ </ol>
+<!--p><b>Limitations:</b> «include» relationship to prevent redundancy in the coding phase could not be defined through this interface.</p> 
+-->
+
+</div> <!-- card body ended for exercise 2 problem statment-->
+</div> <!-- card ended for exercise 2 problem statement-->
+
+
+
+<!----------------------------------------Problem Statement Exercise 2 complete-------------------------------------->
+
+<!------------------------------------------Exercise 2 -------------------------------------------->
+
+<div class="card border border-2 border-success p-2" id="ex2" style="display:none">
+  <div class="card-body">
+    <div class="row">
+    <div class="col-md-10" >
+
+      <!--------------------------------------------------------------- Table 1---------------------------------------------------------------->
+      <label for="table21" class="form-label fs-6" style=" font-weight: bold;">Table #1: Add actors</label>
+      <form id="ftbl21"  class=" bg-white " action="">
+      <div class="table-responsive">
+    <table id="tbl21" class="table table-bordered  border border-1 border-info table-stripped">
+      <thead>
+        <th>Actors</th>
+        <th>Add</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="form-control border-primary " type="text" id="inp21" placeholder="Enter an Actor"></td>
+          <td style="text-align: center;"><button id="t21addbtn" class="btn btn-primary" type="button" onclick="addbtnt21()"  ><i class="bi bi-plus-lg"></i> Add</button></td>
+        </tr>
+      </tbody>
+ 
+    </table>
+   </div> <!-- table 1 responsive div ended for exercise 2-->
+</form>
+<!------------------------------------------------------------Table 2-------------------------------------------------------------------------->
+  <label for="table22" class="form-label fs-6" style=" font-weight: bold;">Table #2: Add use cases</label>
+  <form id="ftbl22"  class="bg-white " action="">
+    <div class="table-responsive">
+  <table id="tbl22" class="table column-bordered-table table-bordered border border-1 border-info ">
+    <thead>
+      <th>Use Case</th>
+      <th>Add</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input class="form-control border-primary " type="text" id="inp22" placeholder="Enter an Use Case"></td>
+        <td  style="text-align: center;"><button id="t22addbtn" class="btn btn-primary" type="button" onclick="addbtnt22()" ><i class="bi bi-plus-lg"></i> Add</button></td>
+      </tr>
+    </tbody>
+
+  </table>
+ </div> <!-- table 2 responsive div ended for exercise 2-->
+</form>
+  
+<!-------------------------------------------------------------- Table 3---------------------------------------------------------------------->
+
+<label for="table23" class="form-label fs-6" style=" font-weight: bold;">Table #3: Add relationship</label>
+  <form id="ftbl23"  class=" bg-white " action="">
+    <div class="table-responsive">
+  <table id="tbl23" class="table table-bordered  border border-1 border-info table-stripped">
+    <thead>
+      <th>From Actor / Use Case</th>
+      <th>Relationship</th>
+      <th>To Actor / Use Case</th>
+      <th>Label (Optional)</th>
+      <th>Add</th>
+     
+    </thead>
+    <tbody>
+     <td>
+      <select id="selectactuc21" class="form-select float-center border border-2 border-primary" aria-label="Default select example" >
+        
+        
+      </select>
+     </td>
+     <td>
+      <select id="selectrel2" class="form-select float-center border border-2 border-primary" aria-label="Default select example" >
+        <option value="Association" selected>Association</option>
+        <option value="Generalization">Generalization</option>
+        <option value="Include">Include</option>
+        <option value="Extend">Extend</option>
+        
+      </select>
+     </td>
+     <td>
+      <select id="selectactuc22" class="form-select float-center border border-2 border-primary" aria-label="Default select example" >
+       
+        
+      </select>
+     </td>
+     <td><input class="form-control border-primary " type="text" id="labelt23i" ></td>
+     <td style="text-align: center;"><button id="t23addbtn" class="btn btn-primary" type="button" onclick="addbtnt23()" ><i class="bi bi-plus-lg"></i> Add</button></td>
+       
+    </tbody>
+
+  </table>
+ </div> <!-- table 3 responsive div ended for exercise 2-->
+</form>
+
+<!----------------------------------------------------------------------- Table 4 ------------------------------------------------------------->
+
+<label for="tablew4" class="form-label fs-6" style=" font-weight: bold;">Table #4: List of actors and use casess</label>
+  <form id="ftbl24"  class=" bg-white " action="">
+    <div class="table-responsive">
+  <table id="tbl24" class="table table-bordered  border border-1 border-info ">
+    <thead>
+      <th>Actor</th>
+      <th>Use Case</th>
+      
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul id="actord2">
+
+          </ul>
+
+        </td>
+        <td>
+        <ul id="usecased2">
+            
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+ </div> <!-- table 4 responsive div ended for exercise 2-->
+</form>
+
+
+<!---------------------------------------------------------------------- Table 5--------------------------------------------------------------->
+<label for="table25" class="form-label fs-6" style=" font-weight: bold;">Table #5: List of relationships</label>
+<form id="ftbl25"  class="bg-white" action="">
+<div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl" >
+<table id="tbl25" class="table table-bordered  border border-1 border-info ">
+  <thead>
+    <th id="froma2">From Actor / Use Case</th>
+    <th id="reltyp2">Relationship</th>
+    <th id="toa2">To Actor / Use Case</th>
+    <th id="lbl2">Label</th>
+    <th>Remove</th>
+ 
+  </thead>
+  <tbody id="tbodytbl25">
+
+  </tbody>
+</table>
+</div> <!-- table 5 responsive div ended for exercise 2-->
+<br>
+<button id="drawbtn2" class="btn btn-primary" type="button" onclick="drawbtnex2()" ><i class="bi bi-pencil-fill"></i> Draw</button>
+</form>
+</div>  <!--column ends for exercise 2-->
+</div>  <!--row  ends for exercise 2-->
+</div>  <!--card body  ends for exercise 2-->
+</div>  <!--card ends for exercise 2-->
+
+<div id="dispuml2" class="card border border-2 border-primary" style="display:none;">
+  <div class="card-body">
+<div id="ucdiagram2" class="container">
+ 
+</div> <!--UML diagram ends for exercise 2-->
+
+</div>  <!--card body  ends for exercise 2-->
+</div>  <!--card ends for exercise 2-->
+
+
+
+  <!-------------------------------------------------------------Result Display----------------------------------------------------------------->
+
+
+				<div class="card border border-2 border-warning p-2" id="dispres" style="display:none;">
+  <div class="card-body">
+    <label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Solution</label>
+	
+   <div style="font-size: medium;" id="show_result"  style=" display: none;" >
+    <div id="show_result1"  style=" display: none;">
+      <img src="./images/solution_ex1a.png" class="img-fluid" > <br>
+   <img src="./images/solution_ex1.png" class="img-fluid" >
+   <br>
+   <label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Result and Discussion</label>
+   <p class="fs-5">As per the problem statement, a member can issue and return book. However, while issusing a book, 
+    credentials of the member must be verified. This is shown by the include relationship between the two 
+    use cases 'Issue book' and 'Verify credentials'.</p>
+
+  </div>
+
+  <div id="show_result2"  style=" display: none;">
+    <img src="./images/solution_ex2a.png" class="img-fluid" >
+    <img src="./images/solution_ex2.png" class="img-fluid" >
+    
+
+    <br>
+    <!--label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Result and Discussion</label>
+ <p class="fs-5"> While booking a flight or hotel customer has to provide his permanent address. So, the two use concerned 
+  cases includes the use case 'Get address'. Payment could be made either by cash or card. So, each of those use 
+  cases extends the 'Make payment' use case. Customer makes the payment while travel agent receives it. Therefore 
+  both customer and travel agent are associated with the use case 'Make payment'.
+  </p-->
+   </div>
+   <br>
+ <button type="button" class="btn btn-info border-primary" id="viewsol" onclick="solview()" disabled>View Solution</button>
+</div>
+</div> <!-- Card body ended for result display-->
+</div> <!-- Card  ended for result display-->
+
+			
+			
+</div> <!--- d-Flex ended-->
+  </div> <!-- container-fluid ended-->
+
+  
+  <!-- <div class="container-fluid p-1 ">
+    <hr>
+  <footer class="text-white text-center" >
+    
+      <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+   
+  </footer>
+  <hr>
+  </div> -->
+    
+  
+   
+    <!--script src="./js/leader-line.min.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/ex2ucasedg.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.5/joint.js"></script>
+
+   <script> 
+
+    
+  
+  /*var c = document.getElementById("uc1");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+  ctx.font = "30px Arial";
+  ctx.strokeText(inpt1,10,50);*/
+  
+  </script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>

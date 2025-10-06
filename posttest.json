@@ -1,0 +1,40 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Generalization relationship exists between two use cases when",
+      "answers": {
+        "a": "A use case derives from a base use case",
+        "b": "A use case derives from a base use case and specializes some of its inherited functionality ",
+        "c": "A use case includes functionality of another use case",
+        "d": "No two use cases can be related "
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": " A college has an online Library Management System. Who's the primary actor here?",
+      "answers": {
+        "a": "Librarian ",
+        "b": "Director of the college ",
+        "c": " Teacher ",
+        "d": "Student"
+       
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Use cases can be used for testing, which includes",
+      "answers": {
+        "a": "Validation ",
+        "b": "Verification ",
+        "c": "Both",
+        "d": " None"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

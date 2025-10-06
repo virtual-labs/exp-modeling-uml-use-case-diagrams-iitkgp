@@ -1,0 +1,29 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What does a use case diagram represent?",
+      "answers": {
+        "a": "A set of actions",
+        "b": "Time sequence of statements executed",
+        "c": "How to use a particular module",
+        "d": "Dont know"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a use case diagram, relationships between different actors are normally shown",
+      "answers": {
+        "a": "True",
+        "b": "False"
+        
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+    
+  ]
+}
